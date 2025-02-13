@@ -1,33 +1,117 @@
-This is for learning git
-1  git--user.name
-    2  git congig
-    3  git log
-    4  git init
-    5  git add readme.md
-    6  git status
-    7  git commit -m " first commit "
-    8  git log
-    9  git branch -M main
-   10  git add remote origin https://github.com/Sudhi-coder/git-python.git
-   11  git remote add origin https://github.com/Sudhi-coder/git-python.git
-   12  git  push -u
-   13  git  push -u origin main
-   14  git  push -u origin main
-   15  git add readme.md
-   16  git commit -m "code updated"
-   17  git push origin
-   18  git push origin main
-   19  Virat Kohli is an Indian international cricketer who plays Test and ODI cricket for the national team and is a former captain in all formats. He is a right-handed batsman and an occasional right arm medium pace bowler. Wikipedia
-   20  Born: 5 November 1988 (age 36 years), Delhi
-   21  Spouse: Anushka Sharma (m. 2017)
-   22  Dates joined: 18 August 2008 (India national cricket team) · See more
-   23  Current teams: India national cricket team, Royal Challengers Bengaluru (Batter)
-   24  Number of centuries: 80
-   25  Hei
-   26  git add -A
-   27  git status
-   28  git commit -m
-   29  git commit -M
-   30  git commit -m "2 files are added"
-   31  git push origin main
-   32  history
+This is the file to know about git and github.
+Git is the version control system which is used for developers to maintain the code and work it remotely.
+
+There are 2 types of version control system:
+=> Centralised Version Control
+=> Distributed Version Control 
+
+In Centralised Version Control, the developers have to maintain a central repository and then they have work it on the remote repository. This cannot be work it on a offline. They cannot download it. It needs continuous network to work.
+
+Git commands:
+
+      => git --version
+
+To configure in the git
+      => git config --global user.name
+      => git config --global user.email
+
+To keep tracking of our file, we use
+       => git init
+
+no longer tracking is necessary,
+       => rm -rf .git
+
+To see the status of the file, whether it is uploaded to remote repository or committed 
+
+        => git status
+
+Add gitignore because, the file contain our info about operating systems, personal preferences and so on. To avoid it in a public view add gitignore file
+touch .gitignore
+
+
+Three areas that our files will cover
+=> working area => untracked and modified file will be presented
+
+=> Staging area => it tracked,organized and ready to commit to the remote repository
+
+			=> here we will be adding files with git commands
+			=> git add <file_name> or git add -A or git add .
+
+To check whether the files or tracked or not, => git status
+
+To remove the file from staging,use
+           
+		   => git reset <file_name>
+
+We need to commit the changes to the remote repository 
+          => git commit -m "first commit"
+
+Once commit is done, then our working directory will be clean. 
+
+So that all the files are tracked and unmodified, until we made any changes to the files.
+
+To view the commit ID(hash number, which is unique) and detailed info of who committed the files, will use:
+           => git log
+
+To add the remote repo to our local repo:
+            => git remote add origin https://github.com/Pavithra-r15/git-tutorial.git
+
+Then push the code which we have committed
+        => git push -u origin main/master
+
+=> Remote area => should clone the remote repository
+				=> git clone <url>
+
+Then add the files, commit it and then do some changes to the file
+
+Follow the same steps and continue with the the commands
+
+	=> git diff
+	=> git status
+	=> git add
+	=> git commit -m "initial commit" 
+
+This command is to check the repository whether it is updated from other branches or by other developers.
+		=> git pull origin main/master
+
+To push our code or changes to the remote repository 
+
+		=> git push origin main/master 
+
+Remote repository:
+Creating branch 
+
+            => git branch <branch_name>
+
+To checkout the branch
+
+            => git checkout <branch_name>
+            
+or use,it will create and switch the branch
+
+            => git branch -d <branch_name>
+
+To merge the branch 
+
+            => git branch --merged
+
+To merge the branch
+
+            => git merge <branch_name>
+
+To push it in the remote repo
+
+            => git push origin main
+
+To delete the branch in local
+
+            => git branch -d <branch_name>
+
+To delete the branch in remote repo
+
+            => git push origin --delete <branch_name>
+
+
+
+
+
