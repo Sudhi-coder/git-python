@@ -89,8 +89,8 @@ To checkout the branch
             
 or use,it will create and switch the branch
 
-            => git ceckout -b <branch_name>
-            => git switch -c <branch_name>
+            => git checkout -b <branch_name>
+            => git switch -c  <branch_name>
 
 To merge the branch 
 
